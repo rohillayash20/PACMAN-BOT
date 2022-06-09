@@ -1,0 +1,18 @@
+cd C:\Users\rohil\OneDrive\Desktop\pacman\search
+Finding a Fixed Food Dot using- 
+Depth First Search
+python pacman.py -l mediumMaze -p SearchAgent
+Breadth First Search
+python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
+A* search
+python pacman.py -l mediumMaze -p SearchAgent -a fn=astar,heuristic=euclideanHeuristic
+python pacman.py -l bigMaze -p SearchAgent -z 0.5 -a fn=astar,heuristic=manhattanHeuristic
+
+cd C:\Users\rohil\OneDrive\Desktop\pacman\multiagent
+Reflex Agent
+python pacman.py -p ReflexAgent -l testClassic
+Minimax
+python pacman.py -p MinimaxAgent -l smallClassic -a depth=3 
+Alpha-Beta Pruning
+python pacman.py -p AlphaBetaAgent -l smallClassic -a depth=3
+python pacman.py -p AlphaBetaAgent -l smallClassic -a depth=3 -a evalFn=better
